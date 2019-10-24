@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <title>Shopping Cart</title>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style_shoppingcart.css">
+    <script src="script_shoppingcart.js" defer></script>
+  </head>  
+  <body>
+    <!-- This is the navigation pane -->
+    <div class="navbar">
+      <a href="https://ektaverma166.github.io/homework_6/homework_6a/">Home</a>   
+      <div class="dropdown">
+        <button class="dropbtn">Products
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://ektaverma166.github.io/homework_6/homework_6a/products.html">All pillows</a>
+          <a href="https://ektaverma166.github.io/homework_6/homework_6a/products_couch_view.html">Couch Pillows</a>
+          <a href="#">Bed Pillows</a>
+          <a href="#">Round Pillows</a>
+          <a href="#">Floor Poof Pillows</a>
+        </div>
+      </div>
+      <a href="#help">Help</a>
+      <div class="icons">
+        <a href="https://ektaverma166.github.io/homework_6/homework_6a/shoppingcart.html"><img id="cart-img" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2Fcart-05.png?v=1571887938758" width="20" height="15" alt="shopping cart"></a>
+        <a href="#"><img src="https://cdn.glitch.com/40a08373-bf42-4006-bfd5-172df3a4002c%2Ficons8-account-50.png?v=1569894069271" width="20" height="15" alt="account info"></a>
+    </div>
+  </div>
+     <!-- This is the fluffstuff logo -->
+    <div class="fluffstuff">
+        <img src="https://cdn.glitch.com/40a08373-bf42-4006-bfd5-172df3a4002c%2Ffluffandstuff2.png?v=1570325285366" width="200" alt="logo">
+    </div>
+    
+    <div id="todo-lists">
+    <div class="list">
+        <div class="list-title">Cart</div>
+        <ol id="grocery-list">
+            <li class="cart-item"> 
+              <button class="delete-item" onclick="deleteListItem(this.parentNode)">X</button>
+              <img class="cart-item-image-type" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2F1-06.jpg?v=1571884251099"/>
+              <img class="cart-item-image-type" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2F1-01.jpg?v=1571884264886"/>
+              <img class="cart-item-image-type" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2F61Xnvk25M2L._SL1024_.jpg?v=1570150140926"/>
+              <div class="cart-item-title">Couch Pillow : Rainy Day</div>
+              <div class="cart-item-description">Filling : Duck Down </div>
+              <div class="cart-item-description">Qty : 3</div>
+            </li>
+            <li class="cart-item"> 
+              <button class="delete-item" onclick="deleteListItem(this.parentNode)">X</button>
+              <img class="cart-item-image-type" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2F1-04.jpg?v=1571884254880"/>
+              <img class="cart-item-image-type" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2F1-03.jpg?v=1571884258253"/>
+              <img class="cart-item-image-type" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2FA19D2EBxDZL._SL1500_.jpg?v=1570149496976"/>
+              <div class="cart-item-title">Couch Pillow : Cozy Denim</div>
+              <div class="cart-item-description">Filling : Memory Foam </div>
+              <div class="cart-item-description">Qty : 1</div>
+            </li>
+          <li class="cart-item"> 
+              <button class="delete-item" onclick="deleteListItem(this.parentNode)">X</button>
+              <img class="cart-item-image-type" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2F1-05.jpg?v=1571884252964"/>
+              <img class="cart-item-image-type" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2F1-02.jpg?v=1571884261635"/>
+              <img class="cart-item-image-type" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2FA1DOI9bOQxL._SL1500_.jpg?v=1570150088678"/>
+              <div class="cart-item-title">Couch Pillow : Morning Haze</div>
+              <div class="cart-item-description">Filling : Hypoallergenic </div>
+              <div class="cart-item-description">Qty : 2</div>
+            </li>
+        </ol>
+      </div>
+    </div>
+    <div class="centeredbutton">
+      <button class="button2" >Checkout</button>
+      <button class="button2" >Clear Cart</button>
+    </div>
+  </body>
+</html>
