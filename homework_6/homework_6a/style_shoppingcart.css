@@ -1,0 +1,250 @@
+body {
+  font-family: Helvetica, serif;
+  background-image: url("https://cdn.glitch.com/40a08373-bf42-4006-bfd5-172df3a4002c%2F93288%20%5BConverted%5D.jpg?v=1570325289081");
+  background-size: 100% 100%;
+  background-repeat: repeat-y;
+  height:100vh;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #e8a79e;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+h1 {
+  font-size: 50px;
+  color: #000000;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.image img{
+  width: 100%;
+  
+}
+
+.icons a {
+  float: right; /* Float links side by side */
+}
+
+.fluffstuff {
+  height:10vh;
+  text-align: center;
+  padding: 20px;
+}
+
+#dropdownwidth1, #dropdownwidth2{
+ width:200px;   
+}
+
+.button
+{
+  width: 150px;
+  text-align: center;
+  margin:0 auto;
+  background-color: #e7e7e7; color: black;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.button2 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #e8a79e;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button2:hover {background-color: #c1bfbf}
+
+.button2:active {
+  background-color: grey;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.centeredbutton {
+  padding: 30px;
+  text-align: center;
+}
+
+select {
+  font-size: 18px;
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+  vertical-align: center;
+  background-color: white;
+}
+
+td.leftalign {
+  text-align: left;
+  padding: 30px;
+}
+
+table {
+  margin-left:auto; 
+  margin-right:auto;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+.largeitemstyling {
+  padding: 10px;
+  background-color: white;
+}
+
+.itemtitlestyling {
+  padding: 10px;
+  background-color: #e8a79e;
+  font-size: 25px;
+}
+
+.itemsubtitlestyling {
+  padding: 5px;
+  background-color: #e8a79e;
+  font-size: 15px;
+}
+
+.itemselectionstyling {
+  padding: 20px;
+  background-color: white;
+}
+
+.imgstyling {
+  width: 100px;
+}
+
+.imgstyling2 {
+  width: 300px;
+  padding: 40px;
+}
+
+.imgstyling3 {
+  width: 150px;
+  padding: 40px;
+}
+
+/*********** LISTS ************/
+#todo-lists {
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 10px;
+}
+
+.list {
+    padding: 30px;
+    margin-bottom: 10px;
+    background-color: #e8a79e;
+}
+
+.cart-item {
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+  background-color: white;
+  border: 10px solid #cccccc;
+}
+
+.list-title {
+  float: middle;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+.list a {
+    color: teal;
+    text-decoration: none;
+}
+
+.delete-item {
+  float: right;
+  background-color:#f9f9f9 ;
+}
+
+
+.cart-item-title {
+  margin-bottom: 10px;
+  color: grey;
+  font-size: 25px;
+}
+
+.cart-item-description {
+  margin-bottom: 5px;
+  color: black;
+  font-size: 13px;
+}
+
+.cart-item-image-type {
+  width: 100px;
+  float: right;
+  padding-right: 20px;
+}
