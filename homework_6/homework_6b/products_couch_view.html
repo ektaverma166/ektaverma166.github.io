@@ -1,0 +1,145 @@
+<html lang="en">
+  <head>
+    <title>Couch Pillows</title>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style_products_couch_view.css">
+    <script src="script_products_couch_view.js" defer></script>
+  </head>  
+  <body>
+    <!-- This is the navigation pane -->
+    <div class="navbar">
+      <a href="index.html">Home</a>   
+      <div class="dropdown">
+        <button class="dropbtn">Products
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="products.html">All pillows</a>
+          <a href="products_couch_view.html">Couch Pillows</a>
+          <a href="#">Bed Pillows</a>
+          <a href="#">Round Pillows</a>
+          <a href="#">Floor Poof Pillows</a>
+        </div>
+      </div>
+      <a href="#help">Help</a>
+      <div class="icons">
+        <a href="shoppingcart.html"><img id="cart-img" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2Fcart-05.png?v=1571887938758" width="20" height="15" alt="shopping cart"></a>
+        <a href="#"><img src="https://cdn.glitch.com/40a08373-bf42-4006-bfd5-172df3a4002c%2Ficons8-account-50.png?v=1569894069271" width="20" height="15" alt="account info"></a>
+    </div>
+    </div>
+     <!-- This is the fluffstuff logo -->
+    <div class="fluffstuff">
+        <img src="https://cdn.glitch.com/40a08373-bf42-4006-bfd5-172df3a4002c%2Ffluffandstuff2.png?v=1570325285366" width="200" alt="logo">
+    </div>
+    <!-- This is the products table -->
+    <table>
+      
+      <tr>
+        <td colspan="2" rowspan="2" class="largeitemstyling">
+          <img class="imgstyling2" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2F61Xnvk25M2L._SL1024_.jpg?v=1570150140926" alt="Couch pillows" id="pillow-img"/>
+        </td>
+        <td colspan="4" class="itemtitlestyling">Couch Pillow
+        </td> 
+      </tr>
+      
+      <tr>
+        <td class="leftalign" colspan="4" rowspan="2">
+          <h3>Description & Details</h3>
+          Lend a pop of pattern to your living room look or liven up the master suite ensemble with this posh pillow. Showcasing a trellis motif in two tones, it's sure to draw the eye, but it's still classic enough to work well in your existing space. Its cover is crafted from 100% cotton fabric, while a recycled polyester fill gives it a full square silhouette. Best of all, this product is made right here in the USA.
+          <br><br> 
+          What's Included?
+          <br> 
+          -Insert/ Cushion Pad
+          <br><br> 
+          Features
+          <br> 
+          -Sewn seam closure
+          <br> 
+          -Knife Edge , Sewn Seam Closure
+          <br> 
+          -Eco-Friendly: Yes
+          <br><br> 
+          Product Details
+          <br> 
+          Fill Material: Polyester/Polyfill
+          <br> 
+          Insert Included: Yes
+          <br><br> 
+          Cover Material
+          <br> 
+          Cover Material: 100% Cotton
+          <br><br> 
+          <h2>
+            $18/piece
+          </h2>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <img class="imgstyling3" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2F1-01.jpg?v=1571884264886" alt="Couch pillows" id="filling-img"/>
+        
+        </td> 
+        <td>
+          <img class="imgstyling3" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2F1-04.jpg?v=1571884254880" alt="Couch pillows" id="quantity-img"/>
+        
+        </td>
+      </tr>
+      
+      <tr>
+        <td colspan="6" class="itemtitlestyling">Buy Now
+        </td> 
+      </tr>
+  
+      <tr>
+        <td colspan="2" class="itemsubtitlestyling" > Select Filling and Quantity</td>
+        <td colspan="4" class="itemsubtitlestyling" > Select Pattern </td> 
+      </tr>
+  
+      <tr>
+        <td colspan="2" >
+          <br>Select Filling <br>
+          <select name="filling" size="3" id="dropdownwidth1" onchange="changeFillingFunc(value)">
+            <option value="duckdown" selected="selected">Duck Down</option>
+            <option value="hypoallergenic">Hypoallergenic</option>
+            <option value="memoryfoam">Memory Foam</option>
+          </select><br><br>
+          Select Quantity <br>
+          <select name="quantity" size="3" id="dropdownwidth2" onchange="changeQuantityFunc(value)">
+            <option value="1" selected="selected">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select><br><br>
+        </td>
+        <td class="itemselectionstyling" >
+          <img class="imgstyling" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2F61Xnvk25M2L._SL1024_.jpg?v=1570150140926" alt="Floor Poof pillows"/>
+          <br />
+          <input type="radio" name="pillowtype" value="rainyday" checked="checked" onclick="changePillowFunc(value)"> Rainy Day<br>
+        </td>
+       <td class="itemselectionstyling" >
+          <img class="imgstyling" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2FA19D2EBxDZL._SL1500_.jpg?v=1570149496976" alt="Floor Poof pillows" />
+          <br />
+          <input type="radio" name="pillowtype" value="cozydenim" onclick="changePillowFunc(value)"> Cozy Denim<br>
+        </td>
+        <td class="itemselectionstyling" >
+          <img class="imgstyling" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2F8156b-0i2rL._SL1500_.jpg?v=1570150093165" alt="Floor Poof pillows" />
+          <br />
+          <input type="radio" name="pillowtype" value="afterschool" onclick="changePillowFunc(value)"> After School<br>
+        </td>
+        <td class="itemselectionstyling" >
+          <img class="imgstyling" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2FA1DOI9bOQxL._SL1500_.jpg?v=1570150088678" alt="Floor Poof pillows" />
+          <br />
+          <input type="radio" name="pillowtype" value="morninghaze" onclick="changePillowFunc(value)"> Morning Haze<br>
+        </td>
+      </tr>
+    </table>
+    
+    <br>
+    
+    <div class="centeredbutton">
+      <button class="button2" onclick="addToCart()">Add to cart</button>
+      <button class="button2" onclick="clearCart()">Clear Cart</button>
+    </div>
+    
+  </body>    
+</html>
