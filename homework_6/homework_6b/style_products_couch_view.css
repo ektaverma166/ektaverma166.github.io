@@ -190,3 +190,9 @@ table {
   width: 150px;
   padding: 40px;
 }
+
+#cart_number{
+  float: right;
+  padding-right: 15px;
+  color: white;
+}
