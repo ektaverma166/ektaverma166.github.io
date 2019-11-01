@@ -207,7 +207,7 @@ table {
 .cart-item {
   padding: 30px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  padding-bottom: 50px;
   margin-right: 30px;
   background-color: white;
   border: 10px solid #cccccc;
@@ -247,4 +247,10 @@ table {
   width: 100px;
   float: right;
   padding-right: 20px;
+}
+
+#cart_number{
+  float: right;
+  padding-right: 15px;
+  color: white;
 }
