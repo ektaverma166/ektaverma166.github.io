@@ -1,14 +1,14 @@
 function setCartQtyInfo()
 {
-  var cart_quantity = parseInt(localStorage.getItem("cart_quantity"));
+  var cart_quantity = localStorage.getItem("cart_quantity");
   //cart_quantity = null;
   if (cart_quantity === null) 
   {
     localStorage.setItem("cart_quantity", 0);
-    document.getElementById("cart_number").textContent = cart_quantity;
+    document.getElementById("cart_number").textContent = 0;
     var cart=[];
     localStorage.setItem("cart", JSON.stringify(cart));
-    alert("cart null");
+    console.log("cart null");
   }
   
   else
@@ -126,4 +126,10 @@ function deleteListItem(item, index) {
   li.appendChild(div_title);
   li.appendChild(div_desc1);
   li.appendChild(div_desc2);
-  ol.appendChild(li);*/
+  ol.appendChild(li);
+
+  function clearCart(){
+  localStorage.setItem("cart_quantity", null);
+  localStorage.setItem("cart", null);
+  location.reload();
+}*/
