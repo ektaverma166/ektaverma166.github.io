@@ -125,3 +125,9 @@ td {
 .tableimg {
   width:500px;
 }
+
+#cart_number{
+  float: right;
+  padding-right: 15px;
+  color: white;
+}
