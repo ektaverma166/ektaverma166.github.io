@@ -123,3 +123,9 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
+#cart_number{
+  float: right;
+  padding-right: 15px;
+  color: white;
+}
