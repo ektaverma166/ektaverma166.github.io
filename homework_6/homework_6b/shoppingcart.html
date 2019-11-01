@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style_shoppingcart.css">
     <script src="script_shoppingcart.js" defer></script>
   </head>  
-  <body>
+  <body onload="onLoad()">
     <!-- This is the navigation pane -->
     <div class="navbar">
       <a href="index.html">Home</a>   
@@ -22,6 +22,7 @@
         </div>
       </div>
       <a href="#help">Help</a>
+      <p id="cart_number"></p>
       <div class="icons">
         <a href="shoppingcart.html"><img id="cart-img" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2Fcart-05.png?v=1571887938758" width="20" height="15" alt="shopping cart"></a>
         <a href="#"><img src="https://cdn.glitch.com/40a08373-bf42-4006-bfd5-172df3a4002c%2Ficons8-account-50.png?v=1569894069271" width="20" height="15" alt="account info"></a>
@@ -36,7 +37,12 @@
     <div class="list">
         <div class="list-title">Cart</div>
         <ol id="grocery-list">
-            <li class="cart-item"> 
+            
+
+
+
+
+            <!-- <li class="cart-item"> 
               <button class="delete-item" onclick="deleteListItem(this.parentNode)">X</button>
               <img class="cart-item-image-type" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2F1-06.jpg?v=1571884251099"/>
               <img class="cart-item-image-type" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2F1-01.jpg?v=1571884264886"/>
@@ -62,7 +68,7 @@
               <div class="cart-item-title">Couch Pillow : Morning Haze</div>
               <div class="cart-item-description">Filling : Hypoallergenic </div>
               <div class="cart-item-description">Qty : 2</div>
-            </li>
+            </li>-->
         </ol>
       </div>
     </div>
