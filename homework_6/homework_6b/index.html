@@ -3,8 +3,9 @@
     <title>Home</title>
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style_home.css" >
+    <script src="script_home.js" defer></script>
   </head>  
-  <body>
+  <body onload="onLoad()">
      <!-- This is the navigation pane -->
     <div class="navbar">
       <a href="index.html">Home</a>   
@@ -21,6 +22,7 @@
         </div>
       </div>
       <a href="#help">Help</a>
+      <p id="cart_number"></p>
       <div class="icons">
         <a href="shoppingcart.html"><img id="cart-img" src="https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2Fcart-05.png?v=1571887938758" width="20" height="15" alt="shopping cart"></a>
         <a href="#"><img src="https://cdn.glitch.com/40a08373-bf42-4006-bfd5-172df3a4002c%2Ficons8-account-50.png?v=1569894069271" width="20" height="15" alt="account info"></a>
