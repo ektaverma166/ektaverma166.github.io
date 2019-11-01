@@ -28,13 +28,37 @@ function changePillowFunc(value){
     document.getElementById("pillow-img").setAttribute("src", "https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2FA1DOI9bOQxL._SL1500_.jpg?v=1570150088678");
 }
 
+function cart_item(type, pattern, pattern_img, filling, filling_img, quantity, quantity_img) {
+  this.type = type;
+  this.pattern = pattern;
+  this.pattern_img = pattern_img;
+  this.filling = filling;
+  this.filling_img = filling_img;
+  this.quantity = quantity;
+  this.quantity_img = quantity_img;
+}
+
+
+
 function onLoad(){
-  var cart_quantity = localStorage.getItem("cart");
+  var cart_quantity = localStorage.getItem("cart_quantity");
+  console.log ("cart_quantity : " + localStorage.getItem("cart_quantity"));
+  //cart_quantity = null;
   if (cart_quantity === null) 
   {
-    localStorage.setItem("cart", 0);
+    localStorage.setItem("cart_quantity", 0);
+    document.getElementById("cart_number").textContent = cart_quantity;
+    var cart=[];
+    localStorage.setItem("cart", JSON.stringify(cart));
+    console.log("if loop");
   }
-  if (cart_quantity==0)
+  
+  else
+  {
+    document.getElementById("cart_number").textContent = cart_quantity;
+    console.log("else loop");
+  }
+  /*if (cart_quantity==0)
     document.getElementById("cart-img").setAttribute("src", "https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2Fcart-05.png?v=1571887938758");
   else if (cart_quantity==1)
     document.getElementById("cart-img").setAttribute("src", "https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2Fcart-01.png?v=1571887935783");
@@ -44,28 +68,61 @@ function onLoad(){
     document.getElementById("cart-img").setAttribute("src", "https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2Fcart-03.png?v=1571887931999");
   else if (cart_quantity==4)
     document.getElementById("cart-img").setAttribute("src", "https://cdn.glitch.com/e4646bfd-e5a6-4dd9-bcfa-8a14af9a257e%2Fcart-04.png?v=1571887928797");
-  console.log(localStorage.getItem("cart"));
+  console.log(localStorage.getItem("cart"));*/
+  
 }
-
-
 function addToCart(){
-  var cart_quantity = parseInt(localStorage.getItem("cart"));
-  if (cart_quantity <= 3)
-    {
-      localStorage.setItem("cart", cart_quantity+1);
-      console.log(localStorage.getItem("cart"));
-      alert ("item added to cart!");
-    }
-  else
-  {
-    alert ("you are not allowed more than 4 items in the cart!");
-    console.log(localStorage.getItem("cart"));
+  var cart_quantity = parseInt(localStorage.getItem("cart_quantity"));
+  var cart=[];
+  cart= JSON.parse(localStorage.getItem("cart"));
+  
+  function cart_item(type, pattern, pattern_img, filling, filling_img, quantity, quantity_img) {
+  this.type = type;
+  this.pattern = pattern;
+  this.pattern_img = pattern_img;
+  this.filling = filling;
+  this.filling_img = filling_img;
+  this.quantity = quantity;
+  this.quantity_img = quantity_img;
   }
+  
+  var type="couch";
+  
+  var ele = document.getElementsByName("pillowtype"); 
+  var i;
+  var pattern;
+            for(i = 0; i < ele.length; i++) { 
+                if(ele[i].checked){
+                pattern= ele[i].value;
+                console.log (pattern);
+                }
+            }
+  
+  var pattern_img= document.getElementById("pillow-img").src;
+  
+  var filling_selected = document.getElementById("dropdownwidth1");
+  var filling = filling_selected.options[filling_selected.selectedIndex].value;
+  console.log (filling);
+  
+  var filling_img= document.getElementById("filling-img").src;
+  
+  var quantity_selected = document.getElementById("dropdownwidth2");
+  var quantity = quantity_selected.options[quantity_selected.selectedIndex].value;
+  console.log (quantity);
+  
+  var quantity_img= document.getElementById("quantity-img").src;
+  
+  cart.push(new cart_item(type, pattern, pattern_img, filling, filling_img, quantity, quantity_img));
+  localStorage.setItem("cart", JSON.stringify(cart));
+  localStorage.setItem("cart_quantity", cart_quantity+1);
+  alert ("item added to cart!-"+ localStorage.getItem("cart_quantity"));
   onLoad();
+  console.log(cart);
 }
 
 function clearCart(){
-  localStorage.setItem("cart", 0);
-  console.log(localStorage.getItem("cart"));
+  localStorage.setItem("cart_quantity", 0);
+  console.log(localStorage.getItem("cart_quantity"));
+  
   onLoad();
 }
