@@ -47,7 +47,7 @@ function onLoad(){
   if (cart_quantity === null) 
   {
     localStorage.setItem("cart_quantity", 0);
-    document.getElementById("cart_number").textContent = cart_quantity;
+    document.getElementById("cart_number").textContent = 0;
     var cart=[];
     localStorage.setItem("cart", JSON.stringify(cart));
     console.log("if loop");
