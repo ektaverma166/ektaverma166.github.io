@@ -1,138 +1,144 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Care Page</title>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Care Page</title>
+<!-- Attaching CSS files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Assets/CSS/portfolio_style.css">
+    <link rel="stylesheet" href="../Assets/CSS/slide_left_style.css">
+    <link rel="stylesheet" href="../Assets/CSS/flip_card_style.css">
+<!-- styling for the page mastheads -->
+    <style>
+      .masthead1 {
+      height: 100vh;
+      min-height: 500px;
+      background-image: url("../Assets/Images/banner_2.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      }
 
-   <link rel="stylesheet" href="../Assets/CSS/portfolio_style.css">
-   <link rel="stylesheet" href="../Assets/CSS/slide_left_style.css">
-   <link rel="stylesheet" href="../Assets/CSS/flip_card_style.css">
+      .masthead2 {
+      height: 100vh;
+      min-height: 500px;
+      background-image: url('../Assets/Images/background_img_6.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat
+      }
+    </style>
+  </head>
+  <body>
 
-   <style>
-    .masthead1 {
-  height: 100vh;
-  min-height: 500px;
-  background-image: url("../Assets/Images/banner_2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  }
+<!-- Navigation menu bar -->
 
-  .masthead2 {
-  height: 100vh;
-  min-height: 500px;
-  background-image: url('../Assets/Images/background_img_6.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat
-  }
-   </style>
-  
-</head>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-  <div class="container">
-    <img class="icon" src="../Assets/Images/avocado_icon.png">
-    <!--<a class="navbar-brand" href="#">&nbsp;An Avocado's Story</a>-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto ">
-        <li class="nav-item ">
-          <a class="nav-link" href="../index.html">About me</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="../HTML/care.html">Care</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="../HTML/portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="../HTML/music.html">Music</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+      <div class="container">
+        <img class="icon" src="../Assets/Images/avocado_icon.png">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item ">
+              <a class="nav-link" href="../index.html">About me</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../HTML/care.html">Care</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="../HTML/portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="../HTML/music.html">Music</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 <!-- Full Page Image Header with Vertically Centered Content -->
-<header class="masthead1 buffer-bottom-75">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <!--<div class="col-12 text-center align-self-end buffer-bottom-25">-->
-      <div class="col-12 text-right buffer-bottom-25">
-        <h1 class="font-weight-light display-1"><br><b><div>Avocado</div></b> Care</h1>
-        <h2 class="font-weight-light">Ps. I'm pretty high maintenance</h2>
+
+    <header class="masthead1 buffer-bottom-75">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <!--<div class="col-12 text-center align-self-end buffer-bottom-25">-->
+          <div class="col-12 text-right buffer-bottom-25">
+            <h1 class="font-weight-light display-1"><br><b><div>Avocado</div></b> Care</h1>
+            <h2 class="font-weight-light">Ps. I'm pretty high maintenance</h2>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</header>
+    </header>
 
-<div class="container buffer-top-75 buffer-bottom-75">
-    <div class= "row justify-content-md-center text-center">
-      <div class= "col">
-        <h1 class="font-weight-light buffer-bottom-25 ">Shopping for an Avocado</h1>
-        <h6 class="font-weight-light buffer-bottom-25">When you are shopping for avocados you want to avoid and sunken in dark spots or cracks.  More times then not, they will still be hard, which is fine, because they will continue to ripen once you get them home.<br><br>
+<!-- Shopping for an Avocado -->
 
-        You will know you have a perfectly ripe avocado by using this little trick:  Hold the avocado very gently in your palm and press very gently against its surface using your thumb. A ripe avocado will yield to gentle pressure, without feeling squishy.<br><br>
+    <div class="container buffer-top-75 buffer-bottom-75">
+        <div class= "row justify-content-md-center text-center">
+          <div class= "col">
+            <h1 class="font-weight-light buffer-bottom-25 ">Shopping for an Avocado</h1>
+            <h6 class="font-weight-light buffer-bottom-25">When you are shopping for avocados you want to avoid and sunken in dark spots or cracks.  More times then not, they will still be hard, which is fine, because they will continue to ripen once you get them home.<br><br>
 
-        You can also lift up this little belly button to take a peek at the color – if its a bright vibrant green, you’ve got a good one, if it looks brown under there – leave it at the store.  But either way, pop that belly button back on when you’re done.</h6>
+            You will know you have a perfectly ripe avocado by using this little trick:  Hold the avocado very gently in your palm and press very gently against its surface using your thumb. A ripe avocado will yield to gentle pressure, without feeling squishy.<br><br>
+
+            You can also lift up this little belly button to take a peek at the color – if its a bright vibrant green, you’ve got a good one, if it looks brown under there – leave it at the store.  But either way, pop that belly button back on when you’re done.</h6>
+          </div>
+          <div class= "col">
+            <img class="w-100" src="../Assets/Images/img_1.jpg">
+          </div>
+        </div>
       </div>
-      <div class= "col">
-        <img class="w-100" src="../Assets/Images/img_1.jpg">
+
+<!-- Storing an Avocado -->
+
+      <div class="container buffer-top-75 buffer-bottom-75">
+        <div class= "row justify-content-md-center text-center">
+          <div class= "col">
+            <img class="w-100" src="../Assets/Images/img_2.jpg">
+          </div>
+          <div class= "col">
+            <h1 class="font-weight-light buffer-bottom-25 ">Storing an Avocado</h1>
+            <h6 class="font-weight-light buffer-bottom-25">Once you have your avocado home, leave them right on the counter in a cool dry place until you are ready to use them.<br><br>
+
+            A hard avocado will usually ripen within a few days. If they ripen before you are ready, you can put them in the fridge to slow down the ripening process.  On the flip side if you need to ripen them faster, you can pop them a paper bag and leave them on the counter to speed things up.<br><br>
+
+            Once your avocado is cut it will begin to oxidize (aka turn brown) quickly.  The best way to avoid this is to give a hearty squeeze of citrus, this will help to slow down the oxidation process.<br><br>
+
+            If you need to store an avocado that has already been cut, cover the surface with some lemon or lime juice and place in an airtight container in the fridge.  You may still have bit of oxidation but I have found this to be the best option for storing the unused portion of the avocado.</h6>
+          </div>
+          
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class="container buffer-top-75 buffer-bottom-75">
-    <div class= "row justify-content-md-center text-center">
-      <div class= "col">
-        <img class="w-100" src="../Assets/Images/img_2.jpg">
+<!-- Working with an Avocado -->
+
+      <div class="container buffer-top-75 buffer-bottom-75">
+        <div class= "row justify-content-md-center text-center">
+          <div class= "col">
+            <h1 class="font-weight-light buffer-bottom-25 ">Working with an Avocado</h1>
+            <h6 class="font-weight-light buffer-bottom-25">Working with your avocado is very simple. Grab a knife and cut the avocado in half lengthwise.  When you cut in you will feel the pit, you can use that as your guide as you go around the avocado.<br><br>
+
+            Then simply twist and separate.  One half of the avocado will have the pit in it and the other won’t.<br><br>
+
+            To remove the pit you have two choices; you can carefully tap the butt of your knife into the pit, twist and remove OR you can give your avocado a little squish and the pit should pop right out.<br><br>
+
+            Then you can either peel the skin off or scoop out the flesh with a spoon.<br><br>
+
+            Now you are ready to slice, dice or mash your avocado.  And never forget the option to leave the avocado in its skin, sprinkle with salt and enjoy with a spoon.</h6>
+          </div>
+          <div class= "col">
+            <img class="w-100" src="../Assets/Images/img_3.jpg">
+          </div>
+        </div>
       </div>
-      <div class= "col">
-        <h1 class="font-weight-light buffer-bottom-25 ">Storing an Avocado</h1>
-        <h6 class="font-weight-light buffer-bottom-25">Once you have your avocado home, leave them right on the counter in a cool dry place until you are ready to use them.<br><br>
 
-        A hard avocado will usually ripen within a few days. If they ripen before you are ready, you can put them in the fridge to slow down the ripening process.  On the flip side if you need to ripen them faster, you can pop them a paper bag and leave them on the counter to speed things up.<br><br>
-
-        Once your avocado is cut it will begin to oxidize (aka turn brown) quickly.  The best way to avoid this is to give a hearty squeeze of citrus, this will help to slow down the oxidation process.<br><br>
-
-        If you need to store an avocado that has already been cut, cover the surface with some lemon or lime juice and place in an airtight container in the fridge.  You may still have bit of oxidation but I have found this to be the best option for storing the unused portion of the avocado.</h6>
-      </div>
-      
-    </div>
-  </div>
-
-  <div class="container buffer-top-75 buffer-bottom-75">
-    <div class= "row justify-content-md-center text-center">
-      <div class= "col">
-        <h1 class="font-weight-light buffer-bottom-25 ">Working with an Avocado</h1>
-        <h6 class="font-weight-light buffer-bottom-25">Working with your avocado is very simple. Grab a knife and cut the avocado in half lengthwise.  When you cut in you will feel the pit, you can use that as your guide as you go around the avocado.<br><br>
-
-        Then simply twist and separate.  One half of the avocado will have the pit in it and the other won’t.<br><br>
-
-        To remove the pit you have two choices; you can carefully tap the butt of your knife into the pit, twist and remove OR you can give your avocado a little squish and the pit should pop right out.<br><br>
-
-        Then you can either peel the skin off or scoop out the flesh with a spoon.<br><br>
-
-        Now you are ready to slice, dice or mash your avocado.  And never forget the option to leave the avocado in its skin, sprinkle with salt and enjoy with a spoon.</h6>
-      </div>
-      <div class= "col">
-        <img class="w-100" src="../Assets/Images/img_3.jpg">
-      </div>
-    </div>
-  </div>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="../Assets/JS/portfolio_script.js"></script>
-<script src="../Assets/JS/slide_left_script.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../Assets/JS/portfolio_script.js"></script>
+    <script src="../Assets/JS/slide_left_script.js"></script>
   
-</body>
+  </body>
 </html>
