@@ -3,225 +3,230 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>The Avocado Story</title>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>The Avocado Story</title>
+<!-- Attaching CSS files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/CSS/index_style.css">
+    <link rel="stylesheet" href="./Assets/CSS/slide_left_style.css">
+    <link rel="stylesheet" href="./Assets/CSS/flip_card_style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+=<!-- styling for the page mastheads -->
+    <style>
+      .masthead1 {
+      height: 100vh;
+      min-height: 500px;
+      background-image: url("./Assets/Images/background_img_5.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      }
 
-   <link rel="stylesheet" href="./Assets/CSS/index_style.css">
-   <link rel="stylesheet" href="./Assets/CSS/slide_left_style.css">
-   <link rel="stylesheet" href="./Assets/CSS/flip_card_style.css">
-   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      .masthead2 {
+      height: 100vh;
+      min-height: 500px;
+      background-image: url('./Assets/Images/background_img_6.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat
+      }
+    </style>
+  </head>
+  <body>
 
-   <style>
-    .masthead1 {
-  height: 100vh;
-  min-height: 500px;
-  background-image: url("./Assets/Images/background_img_5.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  }
+<!-- Navigation menu bar -->
 
-  .masthead2 {
-  height: 100vh;
-  min-height: 500px;
-  background-image: url('./Assets/Images/background_img_6.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat
-  }
-   </style>
-  
-</head>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-  <div class="container">
-    <img class="icon" src="./Assets/Images/avocado_icon.png" href="#">
-    <!--<a class="navbar-brand" href="#">Avocado Portfolio</a>-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto ">
-        <li class="nav-item active">
-          <a class="nav-link" href="./index.html">About me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./HTML/care.html">Care</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./HTML/portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="./HTML/music.html">Music</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+      <div class="container">
+        <img class="icon" src="./Assets/Images/avocado_icon.png" href="#">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./HTML/care.html">Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./HTML/portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="./HTML/music.html">Music</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 <!-- Full Page Image Header with Vertically Centered Content -->
-<header class="masthead1">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <!--<div class="col-12 text-center align-self-end buffer-bottom-25">-->
-      <div class="col-12 text-right buffer-bottom-25">
-        <h1 class="font-weight-light display-1">An <b>Avocado's</b> Story</h1>
-        <h2 class="font-weight-light">All you need to know about me</h2>
+
+    <header class="masthead1">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-right buffer-bottom-25">
+            <h1 class="font-weight-light display-1">An <b>Avocado's</b> Story</h1>
+            <h2 class="font-weight-light">All you need to know about me</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!-- Code for the Who am I panel -->
+
+    <div class="container buffer-top-75 buffer-bottom-75">
+      <div class= "row justify-content-md-center text-center">
+        <div class= "col-sm-10">
+          <h1 class="font-weight-light buffer-bottom-25 ">Who am I?</h1>
+          <h5 class="font-weight-light buffer-bottom-25">I am the fruit of the avocado tree, scientifically known as Persea americana.Not intending to be boastful, but I am prized for my high nutrient value and am added to various dishes due to my good flavor and rich texture. These days, I have become an incredibly popular food among health-conscious individuals. I'm often referred to as a superfood, which is not surprising given my health properties</h5>
+          <h4 class="font-weight-light shadow buffer-bottom-25" id="h_yellow"><br><br><b>AVOCADO</b><br> Of the House Plantae,<br>The First of Her Name,<br>Queen of the Angiosperms<br>Khaleesi of the Great Health Movement,<br>Protector of the Fats,<br>Breaker of Trends,<br>Holy Mother of Guacamole <br><br><br></h4>
+        </div>
       </div>
     </div>
-  </div>
-</header>
 
+<!-- Data viz for harvest in 2017 -->
 
-  <div class="container buffer-top-75 buffer-bottom-75">
-    <div class= "row justify-content-md-center text-center">
-      <div class= "col-sm-10">
-        <h1 class="font-weight-light buffer-bottom-25 ">Who am I?</h1>
-        <h5 class="font-weight-light buffer-bottom-25">I am the fruit of the avocado tree, scientifically known as Persea americana.Not intending to be boastful, but I am prized for my high nutrient value and am added to various dishes due to my good flavor and rich texture. These days, I have become an incredibly popular food among health-conscious individuals. I'm often referred to as a superfood, which is not surprising given my health properties</h5>
-        <h4 class="font-weight-light shadow buffer-bottom-25" id="h_yellow"><br><br><b>AVOCADO</b><br> Of the House Plantae,<br>The First of Her Name,<br>Queen of the Angiosperms<br>Khaleesi of the Great Health Movement,<br>Protector of the Fats,<br>Breaker of Trends,<br>Holy Mother of Guacamole <br><br><br></h4>
-      </div>
+    <div class="container buffer-bottom-75">
+      <h1 class="font-weight-light text-center">Avocado Harvest in 2017 across the World</h1>
+      <div id="myDiv"></div>
     </div>
-  </div>
 
-<div class="container buffer-bottom-75">
-  <h1 class="font-weight-light text-center">Avocado Harvest in 2017 across the World</h1>
-  <div id="myDiv"></div>
-</div>
+<!-- Section on types of avocadoes in the US -->
 
-<div class="container buffer-top-75 buffer-bottom-75">
+    <div class="container buffer-top-75 buffer-bottom-75">
+      
+      <div class= "row justify-content-md-center text-center">
+        <div class= "col-sm-10">
+          <h1 class="font-weight-light buffer-bottom-25 ">Types of Avocados in the United States</h1>
+          <h5 class="font-weight-light ">Technically there are hundreds of different avocado varieties out there, but here in the united States there are notably just two; <b>California avocados (aka HAAS)</b> and <b>Florida avocados</b>. The California avocados are the ones with the dark, pebbly skins. The ones with the smooth green rinds are Florida avocados.</h5>
+        </div>
+      </div>
     
-    <div class= "row justify-content-md-center text-center">
-      <div class= "col-sm-10">
-        <h1 class="font-weight-light buffer-bottom-25 ">Types of Avocados in the United States</h1>
-        <h5 class="font-weight-light ">Technically there are hundreds of different avocado varieties out there, but here in the united States there are notably just two; <b>California avocados (aka HAAS)</b> and <b>Florida avocados</b>. The California avocados are the ones with the dark, pebbly skins. The ones with the smooth green rinds are Florida avocados.</h5>
+      <div class= "row justify-content-md-center text-center">
+        
+        <div class= "col-sm-6 d-flex align-items-stretch">
+          <div class="card">
+            <img src="./Assets/Images/california_avocado.png" class="card-img-top" alt="california avocados">
+            <div class="card-body">
+              <h5 class="card-title">California Avocados</h5>
+              <p class="card-text">Hass avocados come in varying sizes, but are typically no larger than six ounces. Their skin is black and oftentimes bumpy but peels easily to reveal the rich, green flesh (and large, round pit) on the inside. Hass avocado flesh is rich, fatty, and high in monounsaturated fats (the good kind!) and is soft enough to be whipped into a smooth spread, but also firm enough to stand up to simple slices. These avocados are easy to identify when they are ready to eat; a gentle squeeze can determine the ripeness of the avocado. They are primarily sourced from Mexico and California as they thrive in warm climates with plenty of sun.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class= "col-sm-6 d-flex align-items-stretch">
+          <div class="card">
+            <img src="./Assets/Images/florida_avocado.png" class="card-img-top" alt="florida avocados">
+            <div class="card-body">
+              <h5 class="card-title">Florida Avocados</h5>
+              <p class="card-text">Much larger in size, these avocados are known for their bright green skin and large, teardrop-shaped pits. Just as their namesake indicates, these avocados are grown in Florida. They are a bit harder to determine ripeness, as they will never really get as soft as a ripe Hass avocado. This variety is great for slicing and dicing as it holds its shape extremely well. Florida avocados are lower in fat and therefore have an overall lower calorie count. They are much milder in flavor due to their lacking in fat content. Also, since these avocados are larger, they are oftentimes more expensive.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
+  
     </div>
-    
-    <div class= "row justify-content-md-center text-center">
-      <div class= "col-sm-6 d-flex align-items-stretch">
-        <div class="card">
-          <img src="./Assets/Images/california_avocado.png" class="card-img-top" alt="california avocados">
-          <div class="card-body">
-            <h5 class="card-title">California Avocados</h5>
-            <p class="card-text">Hass avocados come in varying sizes, but are typically no larger than six ounces. Their skin is black and oftentimes bumpy but peels easily to reveal the rich, green flesh (and large, round pit) on the inside. Hass avocado flesh is rich, fatty, and high in monounsaturated fats (the good kind!) and is soft enough to be whipped into a smooth spread, but also firm enough to stand up to simple slices. These avocados are easy to identify when they are ready to eat; a gentle squeeze can determine the ripeness of the avocado. They are primarily sourced from Mexico and California as they thrive in warm climates with plenty of sun.</p>
+
+<!-- Data viz on harvest in the US -->
+
+    <div class="container buffer-bottom-75 ">
+      <h1 class="font-weight-light text-center">Avocado Harvest in the United States</h1>
+      <div id="myDiv2"></div>
+    </div>
+
+<!-- Fun facts about avocados -->
+
+    <div class="container">
+      <h1 class="font-weight-light text-center buffer-bottom-25">Fun facts about me</h1>
+  
+      <div class="row buffer-bottom-25">
+        <div class="col-sm-6 d-flex align-items-stretch">
+          <div class="card shadow">
+            <div class="card-body cardjiggle">
+              <h5 class="card-title">World Record</h5>
+              <p class="card-text">The world record for the largest avocado is 5 pounds, 3.6 ounces. This is especially impressive because the average avocado only weighs 6 ounces.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 d-flex align-items-stretch">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">My orginal name</h5>
+              <p class="card-text">The avocado was originally called an "alligator pear" after Irishman Sir Hans Sloane called the avocado tree the “alligator pear tree” in 1696.</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class= "col-sm-6 d-flex align-items-stretch">
-        <div class="card">
-          <img src="./Assets/Images/florida_avocado.png" class="card-img-top" alt="florida avocados">
-          <div class="card-body">
-            <h5 class="card-title">Florida Avocados</h5>
-            <p class="card-text">Much larger in size, these avocados are known for their bright green skin and large, teardrop-shaped pits. Just as their namesake indicates, these avocados are grown in Florida. They are a bit harder to determine ripeness, as they will never really get as soft as a ripe Hass avocado. This variety is great for slicing and dicing as it holds its shape extremely well. Florida avocados are lower in fat and therefore have an overall lower calorie count. They are much milder in flavor due to their lacking in fat content. Also, since these avocados are larger, they are oftentimes more expensive.</p>
+      <div class= "row buffer-bottom-25 ">
+        <div class="col-sm-4 d-flex align-items-stretch">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">Skin toxic for Animals</h5>
+              <p class="card-text">The skin of an avocado can be toxic – to cats and dogs. However, the inside is good to eat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 d-flex align-items-stretch">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">Grand Theft Avoacado</h5>
+              <p class="card-text">In 2017, with the price of avocados rising, three workers on an avocado farm in California stole up to $300,000 worth of avocados.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 d-flex align-items-stretch">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">Harvesting</h5>
+              <p class="card-text">Avocados are harvested by using a 16-foot pole to reach the high-hanging fruit. Avocados tend to be more expensive than other fruits because of the high cost of labor.</p>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class= "row buffer-bottom-75">
+        <div class="col-sm-6 d-flex align-items-stretch">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">Nutrition content</h5>
+              <p class="card-text">Avocados are high in potassium, fiber, and antioxidants. Avocados are actually higher in potassium than bananas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 d-flex align-items-stretch">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">Seed Ink</h5>
+              <p class="card-text">The conquistadors used the seed of an avocado for ink. They discovered that the avocado seed produces a milky liquid that turns red when exposed to air. Some documents written with the seed ink are still preserved today.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
-  
-  </div>
 
-<div class="container buffer-bottom-75 ">
-  <h1 class="font-weight-light text-center">Avocado Harvest in the United States</h1>
-  <div id="myDiv2"></div>
-</div>
+<!-- Quote panel -->
 
-
-
-<div class="container">
-  <h1 class="font-weight-light text-center buffer-bottom-25">Fun facts about me</h1>
-  
-  <div class="row buffer-bottom-25">
-    <div class="col-sm-6 d-flex align-items-stretch">
-      <div class="card shadow">
-        <div class="card-body cardjiggle">
-          <h5 class="card-title">World Record</h5>
-          <p class="card-text">The world record for the largest avocado is 5 pounds, 3.6 ounces. This is especially impressive because the average avocado only weighs 6 ounces.</p>
+    <header class="masthead2">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center text-white">
+            <h1 class="display-2">"I suppose there are people who can pass up free guacamole, but they're either allergic to avocado or too joyless to live." <br><br>-- Frank Bruni</h1>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-sm-6 d-flex align-items-stretch">
-      <div class="card shadow">
-        <div class="card-body">
-          <h5 class="card-title">My orginal name</h5>
-          <p class="card-text">The avocado was originally called an "alligator pear" after Irishman Sir Hans Sloane called the avocado tree the “alligator pear tree” in 1696.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+    </header>
 
-  <div class= "row buffer-bottom-25 ">
-    <div class="col-sm-4 d-flex align-items-stretch">
-      <div class="card shadow">
-        <div class="card-body">
-          <h5 class="card-title">Skin toxic for Animals</h5>
-          <p class="card-text">The skin of an avocado can be toxic – to cats and dogs. However, the inside is good to eat.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 d-flex align-items-stretch">
-      <div class="card shadow">
-        <div class="card-body">
-          <h5 class="card-title">Grand Theft Avoacado</h5>
-          <p class="card-text">In 2017, with the price of avocados rising, three workers on an avocado farm in California stole up to $300,000 worth of avocados.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 d-flex align-items-stretch">
-      <div class="card shadow">
-        <div class="card-body">
-          <h5 class="card-title">Harvesting</h5>
-          <p class="card-text">Avocados are harvested by using a 16-foot pole to reach the high-hanging fruit. Avocados tend to be more expensive than other fruits because of the high cost of labor.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- Attach JS Scripts to the document -->
 
-  <div class= "row buffer-bottom-75">
-    <div class="col-sm-6 d-flex align-items-stretch">
-      <div class="card shadow">
-        <div class="card-body">
-          <h5 class="card-title">Nutrition content</h5>
-          <p class="card-text">Avocados are high in potassium, fiber, and antioxidants. Avocados are actually higher in potassium than bananas.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 d-flex align-items-stretch">
-      <div class="card shadow">
-        <div class="card-body">
-          <h5 class="card-title">Seed Ink</h5>
-          <p class="card-text">The conquistadors used the seed of an avocado for ink. They discovered that the avocado seed produces a milky liquid that turns red when exposed to air. Some documents written with the seed ink are still preserved today.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-
-
-
-<!-- Page Content -->
-
-<header class="masthead2">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <div class="col-12 text-center text-white">
-        <h1 class="display-2">"I suppose there are people who can pass up free guacamole, but they're either allergic to avocado or too joyless to live." <br><br>-- Frank Bruni</h1>
-      </div>
-    </div>
-  </div>
-</header>
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="./Assets/JS/index_script.js"></script>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  
-</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./Assets/JS/index_script.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </body>
 </html>
